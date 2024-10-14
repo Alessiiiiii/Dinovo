@@ -19,11 +19,11 @@ public class Generadordeobstaculos : MonoBehaviour
     }
     void Generar()
     {
-        NewBehaviourScript.VelocidadExtra += 0.05f;
+        NewBehaviourScript.VelocidadExtra += 0.04f;
         int seleccionado = Random.Range(0,3);
         Instantiate(prefapcactus[seleccionado]);
 
-        float tiempoAleatorio = Random.Range(1.5f, 3f);
+        float tiempoAleatorio = Random.Range(2f, 5f);
 
         Invoke("Generar", tiempoAleatorio);
     }
